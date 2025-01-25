@@ -1,0 +1,30 @@
+.blog-card{
+    border: 1px solid black;
+    width: 320px;
+    height: 520px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+}
+.blog-card:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#blog-card-image{
+    width: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.blog-card h3{
+    color: #141414;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.blog-card p{
+    font-size: 1rem;
+    padding-top: 0.7rem;
+}

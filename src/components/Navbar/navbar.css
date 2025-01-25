@@ -1,0 +1,38 @@
+nav{
+    background-color: #0f5032;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.obj-width{
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+}
+#news-logo{
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+}
+.search-input{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 7px;
+}
+.search-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #1ca364;
+    color: white;
+    cursor: pointer;
+}
