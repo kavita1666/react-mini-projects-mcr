@@ -6,7 +6,7 @@ import NavBar from "../Navbar/NavBar";
 import BlogsContainer from "../BlogsContainer/BlogsContainer";
 import Login from "../Login/Login";
 import { ImageCarousel } from "../ImageCarousel/ImageCarousel";
-import { Todolist } from "../Comments/todolist";
+import { Todolist } from "../Todolists/todolist";
 
 const apiKey = "28b5e4f333d741678a6d48b15e2c8fe5";
 
