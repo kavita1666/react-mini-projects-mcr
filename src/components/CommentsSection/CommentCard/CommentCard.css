@@ -1,0 +1,18 @@
+.comment-with-reply{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px;
+}
+.comment-with-reply h3{
+    color: white;
+}
+.reply-button{
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 7px 25px;
+    cursor: pointer;
+    background-color: #c0f4db;
+    margin-left: 30px;
+}

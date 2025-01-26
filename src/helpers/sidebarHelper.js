@@ -19,5 +19,10 @@ export const SideBarLists = [
     content: "Todolist",
     url: "./todolist",
   },
+  {
+    heading: "Comments",
+    content: "Comments",
+    url: "./comments",
+  },
 ];
 
