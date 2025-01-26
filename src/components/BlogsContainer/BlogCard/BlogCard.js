@@ -9,8 +9,12 @@ const BlogCard = ({ blogDetails }) => {
     return description.length > 120 ? description.slice(0, 120) + "..." : description;
   };
 
+  const handleOnClickCard = () => {
+    window.open(blogDetails.url, "_blank");
+  };
+
   return (
-    <div className="blog-card">
+    <div className="blog-card" onClick={handleOnClickCard}>
       <img src={blogDetails.urlToImage} alt={blogDetails.title} id="blog-card-image" />
       <h3>{getTitleDisplay(blogDetails.title)}</h3>
       <p>{getContentDisplay(blogDetails.description || "")}</p>

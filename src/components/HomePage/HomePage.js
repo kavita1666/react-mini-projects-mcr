@@ -6,7 +6,7 @@ import NavBar from "../Navbar/NavBar";
 import BlogsContainer from "../BlogsContainer/BlogsContainer";
 import Login from "../Login/Login";
 import { ImageCarousel } from "../ImageCarousel/ImageCarousel";
-import { Comments } from "../Comments/comments";
+import { Todolist } from "../Comments/todolist";
 
 const apiKey = "28b5e4f333d741678a6d48b15e2c8fe5";
 
@@ -19,7 +19,7 @@ const HomePage = () => {
   }, []);
 
   const handleFetchNews = async () => {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=${pageSize}&apiKey=${apiKey}`);
+    const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=${pageSize}&apiKey=${apiKey}`);
     const data = await response.json();
     setNewsData(() => [...newsData, ...data.articles]);
   };
@@ -50,7 +50,7 @@ const HomePage = () => {
           <Route path="/" exact element={<BlogsContainer newsData={newsData} handleScroll={handleScroll} />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/images" element={<ImageCarousel />}></Route>
-          <Route path="/comments" element={<Comments />}></Route>
+          <Route path="/todolist" element={<Todolist />}></Route>
         </Routes>
       </div>
     </div>

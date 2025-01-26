@@ -15,9 +15,9 @@ export const SideBarLists = [
     url: "./images",
   },
   {
-    heading: "Comments",
-    content: "nested comments",
-    url: "./comments",
+    heading: "Todolist",
+    content: "Todolist",
+    url: "./todolist",
   },
 ];
 
