@@ -5,13 +5,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .comments-inner-container{
     width: 70%;
-    height: 80%;
+    height: 70%;
     background-color: #0f5032;
     margin-top: 20px;
     padding: 20px;
+    overflow: hidden;
 }
 .input-container{
     width: 100%;
@@ -46,4 +48,10 @@
     background-color: #c0f4db;
     font-weight: 700;
     cursor: pointer;
+}
+
+.display-comments{
+    width: 100%;
+    height: 89%;
+    overflow-y: scroll;
 }

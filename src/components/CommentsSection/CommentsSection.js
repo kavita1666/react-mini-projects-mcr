@@ -36,6 +36,7 @@ const sampleData = [
     replies: [],
   },
 ];
+
 export const CommentsSection = () => {
   const [commentsData, setCommentsData] = useState(sampleData);
   const [value, setValue] = useState("");
@@ -50,10 +51,12 @@ export const CommentsSection = () => {
             ADD
           </button>
         </div>
-        {commentsData &&
-          commentsData.map((comment) => {
-            return <CommentCard comment={comment} key={comment.id} />;
-          })}
+        <div className="display-comments">
+          {commentsData &&
+            commentsData.map((comment) => {
+              return <CommentCard comment={comment} key={comment.id} />;
+            })}
+        </div>
       </div>
     </div>
   );
