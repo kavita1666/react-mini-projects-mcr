@@ -56,7 +56,7 @@ export const CommentCard = ({ comment, commentsData, setCommentsData }) => {
 
   //handle Edit
   const handleEditComment = (commentId) => {
-    setReplyBoxOpen(true);
+    // setReplyBoxOpen(true);
     setReplyContent(comment.content);
     setIsEditMode(true);
     console.log("---here ", replyContent, comment.content);
