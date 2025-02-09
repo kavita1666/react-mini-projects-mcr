@@ -7,6 +7,8 @@ import Login from "../Login/Login";
 import { ImageCarousel } from "../ImageCarousel/ImageCarousel";
 import { Todolist } from "../Todolists/todolist";
 import { CommentsSection } from "../CommentsSection/CommentsSection";
+import { Pagination } from "../Pagination/Pagination";
+import { TabForm } from "../TabForm/TabForm";
 
 const HomePage = () => {
   return (
@@ -17,11 +19,13 @@ const HomePage = () => {
         <Accordion />
 
         <Routes>
-          <Route path="/" exact element={<BlogsContainer />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/images" element={<ImageCarousel />}></Route>
-          <Route path="/todolist" element={<Todolist />}></Route>
-          <Route path="/comments" element={<CommentsSection />}></Route>
+          <Route path="/" exact element={<BlogsContainer />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/images" element={<ImageCarousel />} />
+          <Route path="/todolist" element={<Todolist />} />
+          <Route path="/comments" element={<CommentsSection />} />
+          <Route path="/pagination" element={<Pagination />} />
+          <Route path="/tabForm" element={<TabForm />} />
         </Routes>
       </div>
     </div>
