@@ -29,7 +29,6 @@ export const CommentCard = ({ comment, commentsData, setCommentsData }) => {
   // handle reply
   const handleSubmitReply = (replyId) => {
     if (replyContent.trim().length > 0) {
-      console.log(replyId, handleInsertReply(replyId, commentsData));
       setCommentsData((prevComments) => handleInsertReply(replyId, prevComments));
       setReplyBoxOpen(!replyBoxOpen);
       setReplyContent("");
@@ -59,7 +58,6 @@ export const CommentCard = ({ comment, commentsData, setCommentsData }) => {
     setReplyBoxOpen(true);
     setReplyContent(comment.content);
     setIsEditMode(true);
-    console.log("---here ", replyContent, comment.content);
     if (replyContent !== comment.content) {
       setCommentsData((prevComments) => handleEditCommentRecursion(commentId, prevComments));
     }

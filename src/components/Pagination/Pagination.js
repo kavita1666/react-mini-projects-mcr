@@ -16,8 +16,6 @@ export const Pagination = () => {
     } else {
       setLoading(false);
     }
-
-    console.log(response.products);
   };
 
   useEffect(() => {

@@ -47,14 +47,12 @@ export const TabForm = () => {
       newErrors.pincode = "Pincode is required";
     }
     setErrors(newErrors);
-    console.log("newErrors", newErrors);
     return newErrors.length === 0;
   };
 
   const ActiveComponent = tabFormConfig[activeTab].component;
 
   const handleSubmitForm = () => {
-    console.log(errors);
     if (Object.keys(errors).length === 0) {
       alert(`${formData.name} your form is submitted successfully`);
     }
