@@ -9,6 +9,7 @@ import { Todolist } from "../Todolists/todolist";
 import { CommentsSection } from "../CommentsSection/CommentsSection";
 import { Pagination } from "../Pagination/Pagination";
 import { TabForm } from "../TabForm/TabForm";
+import { AutoSearch } from "../AutoSearch/AutoSearch";
 
 const HomePage = () => {
   return (
@@ -26,6 +27,7 @@ const HomePage = () => {
           <Route path="/comments" element={<CommentsSection />} />
           <Route path="/pagination" element={<Pagination />} />
           <Route path="/tabForm" element={<TabForm />} />
+          <Route path="/autoSearch" element={<AutoSearch />} />
         </Routes>
       </div>
     </div>

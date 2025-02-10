@@ -34,5 +34,10 @@ export const SideBarLists = [
     content: "tabForm",
     url: "./tabForm",
   },
+  {
+    heading: "Auto Search",
+    content: "autoSearch",
+    url: "./autoSearch",
+  },
 ];
 
