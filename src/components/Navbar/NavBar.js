@@ -28,12 +28,12 @@ const NavBar = ({ setNewsData }) => {
         <a href="index.html" id="news-logo">
           News.
         </a>
-        <div className="search-container">
-          <input type="text" placeholder="Search here.." className="search-input" id="search-input" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
+        {/* <div className="search-container">
+          <input type="text" placeholder="yet to implement.." className="search-input" id="search-input" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
           <button className="search-btn" id="search-btn" onClick={handleSearch}>
             Search
           </button>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
