@@ -10,6 +10,11 @@ import { CommentsSection } from "../CommentsSection/CommentsSection";
 import { Pagination } from "../Pagination/Pagination";
 import { TabForm } from "../TabForm/TabForm";
 import { AutoSearch } from "../AutoSearch/AutoSearch";
+import { CountDownTimer } from "../CountDownTimer/CountDownTimer";
+import { ProgressBar } from "../ProgressBar/ProgressBar";
+import { StarRating } from "../StarRating/StarRating";
+import { DragAndDrop } from "../DragAndDrop/DragAndDrop";
+import { PollWidget } from "../PollWidget/PollWidget";
 
 const HomePage = () => {
   return (
@@ -28,6 +33,11 @@ const HomePage = () => {
           <Route path="/pagination" element={<Pagination />} />
           <Route path="/tabForm" element={<TabForm />} />
           <Route path="/autoSearch" element={<AutoSearch />} />
+          <Route path="/countDownTimer" element={<CountDownTimer />} />
+          <Route path="/progressBar" element={<ProgressBar />} />
+          <Route path="/starRating" element={<StarRating />} />
+          <Route path="/dragAndDrop" element={<DragAndDrop />} />
+          <Route path="/pollWidget" element={<PollWidget />} />
         </Routes>
       </div>
     </div>

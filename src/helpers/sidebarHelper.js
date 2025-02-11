@@ -39,5 +39,49 @@ export const SideBarLists = [
     content: "autoSearch",
     url: "./autoSearch",
   },
+  {
+    heading: "Count Down Timer",
+    content: "countDownTimer",
+    url: "./countDownTimer",
+  },
+  {
+    heading: "Progress Bar",
+    content: "progressBar",
+    url: "./progressBar",
+  },
+  {
+    heading: "Star Rating",
+    content: "starRating",
+    url: "./starRating",
+  },
+  {
+    heading: "Drag and Drop",
+    content: "dragAndDrop",
+    url: "./dragAndDrop",
+  },
+  {
+    heading: "Poll Widget",
+    content: "pollWidget",
+    url: "./pollWidget",
+  },
+  {
+    heading: "React Toast",
+    content: "reactToast",
+    url: "./reactToast",
+  },
+  {
+    heading: "Tic Tac Toe",
+    content: "ticTacToe",
+    url: "./ticTacToe",
+  },
+  {
+    heading: "React Virtualized Lists",
+    content: "virtualizedLists",
+    url: "./virtualizedLists",
+  },
+  {
+    heading: "React Stepper",
+    content: "reactStepper",
+    url: "./reactStepper",
+  },
 ];
-
