@@ -9,12 +9,16 @@ export const Pagination = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchProducts = async () => {
-    const data = await fetch("https://dummyjson.com/products");
-    const response = await data.json();
-    if (response.products.length > 0) {
-      setProductsData(response.products);
-    } else {
-      setLoading(false);
+    try {
+      const data = await fetch("https://dummyjson.com/products");
+      const response = await data.json();
+      if (response.products.length > 0) {
+        setProductsData(response.products);
+      } else {
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log(error);
     }
   };
 

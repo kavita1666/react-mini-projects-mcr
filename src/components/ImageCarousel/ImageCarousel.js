@@ -18,7 +18,7 @@ export const ImageCarousel = () => {
       <img src={leftArrow} alt="left-arrow" className="navigation-arrow" onClick={handleLeftNavigation} />
 
       <div className="image-div">
-        <img src={imageLists[imageIndex].url} alt="img-wallpaper" className="image" />
+        <img src={imageLists[imageIndex].url} alt={imageLists[imageIndex].title} className="image" />
       </div>
 
       <img src={rightArrow} alt="left-arrow" className="navigation-arrow" onClick={handleRightNavigation} />

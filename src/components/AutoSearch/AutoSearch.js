@@ -50,7 +50,7 @@ export const AutoSearch = () => {
   return (
     <div className="auto-search-container">
       <div className="input-container">
-        <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="input-field" />
+        <input placeholder="type something here...." type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="input-field" />
         <button className="button" onClick={() => handleFilterData()}>
           search
         </button>
