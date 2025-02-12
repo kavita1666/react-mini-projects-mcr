@@ -13,7 +13,7 @@ export const CountDownTimer = () => {
     setCurrentTime({
       hrs: 0,
       mins: 0,
-      secs: 57,
+      secs: 0,
     });
   }, []);
 
