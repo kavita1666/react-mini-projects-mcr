@@ -23,22 +23,23 @@ const HomePage = () => {
 
       <div className="body-container">
         <Accordion />
-
-        <Routes>
-          <Route path="/" exact element={<BlogsContainer />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/images" element={<ImageCarousel />} />
-          <Route path="/todolist" element={<Todolist />} />
-          <Route path="/comments" element={<CommentsSection />} />
-          <Route path="/pagination" element={<Pagination />} />
-          <Route path="/tabForm" element={<TabForm />} />
-          <Route path="/autoSearch" element={<AutoSearch />} />
-          <Route path="/countDownTimer" element={<CountDownTimer />} />
-          <Route path="/progressBar" element={<ProgressBar />} />
-          <Route path="/starRating" element={<StarRating />} />
-          <Route path="/dragAndDrop" element={<DragAndDrop />} />
-          <Route path="/pollWidget" element={<PollWidget />} />
-        </Routes>
+        <div className="content-container">
+          <Routes>
+            <Route path="/" exact element={<BlogsContainer />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/images" element={<ImageCarousel />} />
+            <Route path="/todolist" element={<Todolist />} />
+            <Route path="/comments" element={<CommentsSection />} />
+            <Route path="/pagination" element={<Pagination />} />
+            <Route path="/tabForm" element={<TabForm />} />
+            <Route path="/autoSearch" element={<AutoSearch />} />
+            <Route path="/countDownTimer" element={<CountDownTimer />} />
+            <Route path="/progressBar" element={<ProgressBar />} />
+            <Route path="/starRating" element={<StarRating />} />
+            <Route path="/dragAndDrop" element={<DragAndDrop />} />
+            <Route path="/pollWidget" element={<PollWidget />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );

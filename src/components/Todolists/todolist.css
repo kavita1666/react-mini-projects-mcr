@@ -1,5 +1,6 @@
 .todolist-container-outer{
     width: 100%;
+    min-height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
