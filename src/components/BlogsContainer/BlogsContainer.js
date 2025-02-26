@@ -10,7 +10,7 @@ const BlogsContainer = () => {
 
   useEffect(() => {
     handleFetchNews();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const BlogsContainer = () => {
   const handleFetchNews = async () => {
     const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=${pageSize}&apiKey=${apiKey}`);
     const data = await response.json();
-    setLoading(false)
+    setLoading(false);
     setNewsData(() => [...newsData, ...data.articles]);
   };
 
@@ -42,11 +42,14 @@ const BlogsContainer = () => {
   };
 
   return (
-    <div className="blog-container" onScroll={handleScroll}>
-      {loading && <div>Loading....</div>}
-      {newsData?.map((item, index) => {
-        return <BlogCard blogDetails={item} key={index} />;
-      })}
+    <div className="outer-container" onScroll={handleScroll}>
+      <h1>News Updates</h1>
+      <div className="blog-container">
+        {loading && <div>Loading....</div>}
+        {newsData?.map((item, index) => {
+          return <BlogCard blogDetails={item} key={index} />;
+        })}
+      </div>
     </div>
   );
 };
