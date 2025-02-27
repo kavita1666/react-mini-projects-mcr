@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-react-app/static/css/main.70bd86df.css",
-    "main.js": "/my-react-app/static/js/main.5dcf8b6e.js",
-    "static/media/angle-circle-right.png": "/my-react-app/static/media/angle-circle-right.53c9a91af622bff1b8ad.png",
-    "static/media/angle-circle-left.png": "/my-react-app/static/media/angle-circle-left.1cd7df7b846df4ff1922.png",
-    "index.html": "/my-react-app/index.html",
-    "main.70bd86df.css.map": "/my-react-app/static/css/main.70bd86df.css.map",
-    "main.5dcf8b6e.js.map": "/my-react-app/static/js/main.5dcf8b6e.js.map"
+    "main.css": "/react-mini-projects-mcr/static/css/main.ce3aa783.css",
+    "main.js": "/react-mini-projects-mcr/static/js/main.3906292d.js",
+    "static/media/angle-circle-right.png": "/react-mini-projects-mcr/static/media/angle-circle-right.53c9a91af622bff1b8ad.png",
+    "static/media/angle-circle-left.png": "/react-mini-projects-mcr/static/media/angle-circle-left.1cd7df7b846df4ff1922.png",
+    "index.html": "/react-mini-projects-mcr/index.html",
+    "main.ce3aa783.css.map": "/react-mini-projects-mcr/static/css/main.ce3aa783.css.map",
+    "main.3906292d.js.map": "/react-mini-projects-mcr/static/js/main.3906292d.js.map"
   },
   "entrypoints": [
-    "static/css/main.70bd86df.css",
-    "static/js/main.5dcf8b6e.js"
+    "static/css/main.ce3aa783.css",
+    "static/js/main.3906292d.js"
   ]
 }
