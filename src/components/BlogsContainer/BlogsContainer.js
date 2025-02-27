@@ -20,10 +20,25 @@ const BlogsContainer = () => {
   }, [newsData]);
 
   const handleFetchNews = async () => {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=${pageSize}&apiKey=${apiKey}`);
-    const data = await response.json();
-    setLoading(false);
-    setNewsData(() => [...newsData, ...data?.articles]);
+    try {
+      setLoading(true);
+      const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=${pageSize}&apiKey=${apiKey}`);
+
+      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+      const data = await response.json();
+
+      // Ensure data.articles is an array
+      if (!Array.isArray(data.articles)) {
+        throw new Error("Invalid data format: articles is not an array");
+      }
+
+      setNewsData((prev) => [...prev, ...data.articles]); // Append new articles
+    } catch (error) {
+      console.error("Error fetching news:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleScroll = (e) => {
