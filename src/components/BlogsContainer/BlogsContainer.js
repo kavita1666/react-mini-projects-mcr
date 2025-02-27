@@ -23,7 +23,7 @@ const BlogsContainer = () => {
     const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=${pageSize}&apiKey=${apiKey}`);
     const data = await response.json();
     setLoading(false);
-    setNewsData(() => [...newsData, ...data.articles]);
+    setNewsData(() => [...newsData, ...data?.articles]);
   };
 
   const handleScroll = (e) => {

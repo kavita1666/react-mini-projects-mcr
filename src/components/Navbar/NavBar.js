@@ -19,7 +19,7 @@ const NavBar = ({ setNewsData }) => {
     }
     const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&pageSize=10&apiKey=${apiKey}`);
     const data = await response.json();
-    setNewsData(data.articles);
+    setNewsData(data?.articles);
   };
 
   return (
