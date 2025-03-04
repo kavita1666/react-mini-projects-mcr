@@ -1,13 +1,13 @@
 import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <HomePage />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
