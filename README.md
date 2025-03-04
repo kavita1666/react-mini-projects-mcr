@@ -31,4 +31,12 @@ The following components are loaded dynamically based on the URL route:
 - **React Router**: For managing navigation and routing within the app.
 - **CSS**: For styling the components and layout.
 
+## Screenshots of website
+![Screenshot 1](src/assets/screenshots/image1.png)
+![Screenshot 2](src/assets/screenshots/image2.png)
+![Screenshot 3](src/assets/screenshots/image3.png)
+![Screenshot 4](src/assets/screenshots/image4.png)
+![Screenshot 5](src/assets/screenshots/image5.png)
+![Screenshot 6](src/assets/screenshots/image6.png)
+
 Feel free to modify or add any additional details specific to your project, such as contributing guidelines, known issues, or future enhancements!
