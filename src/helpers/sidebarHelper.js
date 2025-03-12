@@ -49,11 +49,11 @@ export const SideBarLists = [
     content: "progressBar",
     url: "./progressBar",
   },
-  // {
-  //   heading: "Star Rating",
-  //   content: "starRating",
-  //   url: "./starRating",
-  // },
+  {
+    heading: "Form Stepper",
+    content: "formStepper",
+    url: "./formStepper",
+  },
   {
     heading: "Drag and Drop",
     content: "dragAndDrop",
@@ -83,5 +83,10 @@ export const SideBarLists = [
   //   heading: "React Stepper",
   //   content: "reactStepper",
   //   url: "./reactStepper",
+  // },
+  // {
+  //   heading: "Star Rating",
+  //   content: "starRating",
+  //   url: "./starRating",
   // },
 ];

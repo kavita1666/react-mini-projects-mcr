@@ -12,7 +12,7 @@ import { TabForm } from "../TabForm/TabForm";
 import { AutoSearch } from "../AutoSearch/AutoSearch";
 import { CountDownTimer } from "../CountDownTimer/CountDownTimer";
 import { ProgressBar } from "../ProgressBar/ProgressBar";
-import { StarRating } from "../StarRating/StarRating";
+import { FormStepper } from "../FormStepper/FormStepper";
 import { DragAndDrop } from "../DragAndDrop/DragAndDrop";
 import { PollWidget } from "../PollWidget/PollWidget";
 
@@ -35,7 +35,7 @@ const HomePage = () => {
             <Route path="/autoSearch" element={<AutoSearch />} />
             <Route path="/countDownTimer" element={<CountDownTimer />} />
             <Route path="/progressBar" element={<ProgressBar />} />
-            <Route path="/starRating" element={<StarRating />} />
+            <Route path="/formStepper" element={<FormStepper />} />
             <Route path="/dragAndDrop" element={<DragAndDrop />} />
             <Route path="/pollWidget" element={<PollWidget />} />
           </Routes>
