@@ -17,6 +17,6 @@ export const formStepperConfig = [
   {
     id: 4,
     title: "Delivered",
-    element: <div>PYour order has been delivered.</div>,
+    element: <div>Your order has been delivered.</div>,
   },
 ];

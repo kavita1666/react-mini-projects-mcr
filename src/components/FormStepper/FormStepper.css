@@ -5,7 +5,7 @@
 }
 .stepper-wrapper {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
   z-index: 2;
 }
@@ -51,4 +51,27 @@
   align-items: center;
   justify-content: center;
   margin: 50px;
+}
+/** completed step */
+.completed .step-number {
+  background-color: #4caf50; /* Green for completed steps */
+  color: white;
+}
+
+.completed::before {
+  background-color: #4caf50;
+}
+
+/* Active Step */
+.active .step-number {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+.step.active {
+  background-color: transparent !important;
+}
+
+.active::before {
+  background-color: #4caf50 !important;
+  color: white !important;
 }
