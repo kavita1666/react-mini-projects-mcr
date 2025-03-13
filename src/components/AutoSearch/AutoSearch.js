@@ -45,8 +45,6 @@ export const AutoSearch = () => {
     debounceSearch(handleFilterData, 1000)();
   }, [searchQuery]);
 
-  console.log("filteredData", filteredData);
-
   return (
     <div className="auto-search-container">
       <div className="input-container">

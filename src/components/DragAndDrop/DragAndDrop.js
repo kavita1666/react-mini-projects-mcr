@@ -56,7 +56,7 @@ export const DragAndDrop = () => {
   //   localStorage.setItem("stickyNotes", JSON.stringify(updatedNotes));
   // }, [stickyNotes.length]);
 
-  console.log(stickyNotes);
+  // console.log(stickyNotes);
 
   return (
     <div className="drag-drop-container">
