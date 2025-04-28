@@ -59,6 +59,11 @@ export const SideBarLists = [
     content: "dragAndDrop",
     url: "./dragAndDrop",
   },
+  {
+    heading: "canvas circle drawing",
+    content: "circleCanvas",
+    url: "./circleCanvas",
+  },
   // {
   //   heading: "Poll Widget",
   //   content: "pollWidget",

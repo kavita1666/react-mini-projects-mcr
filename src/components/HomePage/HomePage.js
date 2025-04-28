@@ -15,6 +15,7 @@ import { ProgressBar } from "../ProgressBar/ProgressBar";
 import { FormStepper } from "../FormStepper/FormStepper";
 import { DragAndDrop } from "../DragAndDrop/DragAndDrop";
 import { PollWidget } from "../PollWidget/PollWidget";
+import CircleCanvas from "../CircleCanvas/CircleCanvas";
 
 const HomePage = () => {
   return (
@@ -38,6 +39,7 @@ const HomePage = () => {
             <Route path="/formStepper" element={<FormStepper />} />
             <Route path="/dragAndDrop" element={<DragAndDrop />} />
             <Route path="/pollWidget" element={<PollWidget />} />
+            <Route path="/circleCanvas" element={<CircleCanvas />} />
           </Routes>
         </div>
       </div>
